@@ -15,5 +15,5 @@ Read repo-local authority first. Global Repo Work OS and active tools live under
 - Unattended work only on isolated `work/*` worktrees.
 - Never substitute or mutate another canonical repo.
 - Validation and exact-SHA GitHub checks must pass before merge eligibility.
-- Merge to main/default is human-authorized only.
+- Merge to main/default is permitted ONLY when every required check is green: never with `--admin`, never force-pushed, never on a RED or UNPROVEN result. A blocker that cannot go green on its own — a credential, an account setting, a product decision — is reported as a NAMED STOP, never merged around.
 - Use Claude Design routing for material UI/UX work when useful; not backend-only work.
